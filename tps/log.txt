@@ -1,0 +1,30 @@
+[2025-10-18 08:42:11,391] INFO     server: Starting application version 2.3.1
+[2025-10-18 08:42:11,402] DEBUG    config: Loaded environment variables from .env
+[2025-10-18 08:42:11,414] INFO     database: Connected to PostgreSQL at 127.0.0.1:5432
+[2025-10-18 08:42:11,415] INFO     database: Using schema public
+[2025-10-18 08:42:11,420] INFO     auth: JWT secret successfully loaded
+[2025-10-18 08:42:11,624] INFO     scheduler: Task "daily_report_job" scheduled every 24h
+[2025-10-18 08:42:11,731] INFO     server: HTTP server listening on port 8080
+[2025-10-18 08:42:15,002] INFO     request: POST /api/v1/login 200 OK (user=roy.aballo@qotto.net, 123ms)
+[2025-10-18 08:42:17,889] INFO     request: GET /api/v1/payments 200 OK (rows=128, 214ms)
+[2025-10-18 08:42:18,451] WARNING  payments: Slow query detected (query_time=3.12s)
+[2025-10-18 08:42:19,019] INFO     request: POST /api/v1/promises 201 CREATED (user=abalo.g.roy@aims-senegal.org)
+[2025-10-18 08:42:19,745] DEBUG    core: PaymentPromise validated with ID=PP-2025-0148
+[2025-10-18 08:42:22,338] INFO     scheduler: Running task "daily_report_job"
+[2025-10-18 08:42:22,419] INFO     reports: Generating daily summary for user=roy.aballo@qotto.net
+[2025-10-18 08:42:22,501] DEBUG    ml: EfficientNet-B0 inference started (batch_size=32)
+[2025-10-18 08:42:23,211] INFO     ml: Inference completed | Accuracy=0.912 | F1=0.907
+[2025-10-18 08:42:23,212] INFO     reports: Daily summary successfully uploaded to CouchDB
+[2025-10-18 08:42:23,213] INFO     database: CouchDB document _id="daily-2025-10-18-roy"
+[2025-10-18 08:42:23,217] DEBUG    memory: Peak GPU usage 742MB, CPU load 37%
+[2025-10-18 08:42:23,225] INFO     scheduler: Task "daily_report_job" completed successfully
+[2025-10-18 08:42:30,092] INFO     request: GET /api/v1/health 200 OK
+[2025-10-18 08:42:34,909] ISSUE    database: Lost connection to PostgreSQL (retrying in 5s)
+[2025-10-18 08:42:39,915] INFO     database: Reconnected to PostgreSQL successfully
+[2025-10-18 08:42:41,007] WARNING  auth: Token expired for user=guest@example.com
+[2025-10-18 08:42:41,110] INFO     request: POST /api/v1/refresh-token 200 OK (user=guest@example.com)
+[2025-10-18 08:42:46,804] INFO     request: GET /api/v1/promises?status=active 200 OK (rows=45, 192ms)
+[2025-10-18 08:42:49,412] DEBUG    scheduler: Queue check — 0 pending tasks
+[2025-10-18 08:42:52,118] INFO     server: Graceful shutdown requested (SIGTERM)
+[2025-10-18 08:42:52,119] INFO     scheduler: Cancelling 1 running task
+[2025-10-18 08:42:52,125] INFO     server: Application stopped cleanly

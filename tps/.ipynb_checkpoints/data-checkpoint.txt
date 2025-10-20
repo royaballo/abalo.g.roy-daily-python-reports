@@ -1,0 +1,25 @@
+# --- Utilisateurs ---
+ID: 001 | Nom: Alice Koffi | Email: alice.koffi@example.com | Âge: 29 | Ville: Abidjan
+ID: 002 | Nom: Géraldo Aballo | Email: geraldo.aballo@aims-senegal.org | Âge: 25 | Ville: Dakar
+ID: 003 | Nom: Fatou Ndiaye | Email: fatou.ndiaye@qotto.net | Âge: 32 | Ville: Thiès
+ID: 004 | Nom: Jean Mensah | Email: jean.mensah@gmail.com | Âge: 27 | Ville: Lomé
+
+# --- Transactions ---
+TX-1001 | Montant: 18 500 XOF | Statut: Validé | Date: 2025-10-15 | Méthode: Mobile Money
+TX-1002 | Montant: 7 200 XOF  | Statut: En attente | Date: 2025-10-16 | Méthode: Carte bancaire
+TX-1003 | Montant: 25 000 XOF | Statut: Échoué | Date: 2025-10-17 | Méthode: Espèces
+
+# --- Données capteurs ---
+Sensor_01 | Température: 28.6°C | Humidité: 64% | Timestamp: 2025-10-18T09:00:12Z
+Sensor_02 | Température: 30.1°C | Humidité: 58% | Timestamp: 2025-10-18T09:01:43Z
+Sensor_03 | Température: 27.9°C | Humidité: 70% | Timestamp: 2025-10-18T09:02:15Z
+
+# --- Observations plantes ---
+Sample_ID: TMT_001 | Classe: Tomato___Healthy | Prédiction: 0.97 | Modèle: EfficientNet-B0
+Sample_ID: TMT_002 | Classe: Tomato___Early_blight | Prédiction: 0.88 | Modèle: MobileNetV3
+Sample_ID: TMT_003 | Classe: Tomato___Bacterial_spot | Prédiction: 0.91 | Modèle: ShuffleNetV2
+
+# --- Rapports journaliers ---
+Date: 2025-10-14 | Tâches accomplies: 6 | Temps total: 5h45 | Commentaire: "Analyse des modèles terminée"
+Date: 2025-10-15 | Tâches accomplies: 4 | Temps total: 4h10 | Commentaire: "Nettoyage du dataset et sauvegarde"
+Date: 2025-10-16 | Tâches accomplies: 7 | Temps total: 6h30 | Commentaire: "Test des augmentations de contraste"
